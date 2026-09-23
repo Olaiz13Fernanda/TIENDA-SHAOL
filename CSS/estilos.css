@@ -1,0 +1,195 @@
+/* ===== ESTILOS GENERALES ===== */
+
+body {
+    background-color: #F5F1E8;
+    background-image: url("../IMAGENES/fondo-shaol.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #344E41;
+}
+
+
+/* ===== MENU DE NAVEGACION ===== */
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding: 10px 25px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(245, 241, 232, 0.95);
+    backdrop-filter: blur(8px);
+}
+
+
+/* ===== LOGO PEQUEÑO DEL MENU ===== */
+
+.menu .logo-menu {
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+}
+
+.menu .logo-menu img {
+    width: 70px;
+    height: auto;
+    display: block;
+}
+
+
+/* ===== ENLACES DEL MENU ===== */
+
+.menu > a:not(.logo-menu) {
+    color: #315f3b;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    position: relative;
+    padding: 5px 0;
+}
+
+
+/* ===== LINEA DEBAJO DEL MENU ===== */
+
+.menu > a:not(.logo-menu)::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #6b8e5a;
+    left: 50%;
+    bottom: 0;
+    transition: 0.3s;
+}
+
+
+/* ===== EFECTO DEL MENU ===== */
+
+.menu > a:not(.logo-menu):hover {
+    color: #6b8e5a;
+}
+
+.menu > a:not(.logo-menu):hover::after {
+    width: 100%;
+    left: 0;
+}
+
+
+/* ===== LOGO PRINCIPAL ===== */
+
+.logo {
+    display: block;
+    width: 500px;
+    max-width: 80%;
+    margin: 20px auto 10px;
+}
+
+
+/* ===== TEXTO DE PRESENTACION ===== */
+
+body > p {
+    text-align: center;
+    font-size: 20px;
+}
+
+
+/* ===== TITULOS DE SECCION ===== */
+
+h2 {
+    text-align: center;
+    color: #386641;
+    font-size: 32px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+
+/* ===== CONTENEDOR DE PRODUCTOS ===== */
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(3, 280px);
+    gap: 25px;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    justify-content: center;
+}
+
+
+/* ===== TARJETAS DE PRODUCTOS ===== */
+
+.producto {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* ===== EFECTO AL PASAR EL MOUSE ===== */
+
+.producto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ===== IMAGENES DE PRODUCTOS ===== */
+
+.producto img {
+    width: 100%;
+    max-width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+        transition: transform 0.3s ease;
+}
+ .producto:hover img {
+    transform: scale(1.05);
+}
+
+/* ===== NOMBRE DEL PRODUCTO ===== */
+
+.producto h3 {
+    color: #315f3b;
+    font-size: 20px;
+}
+
+
+/* ===== DESCRIPCION DEL PRODUCTO ===== */
+
+.producto p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* ===== CENTRAR LOS DOS ULTIMOS PRODUCTOS ===== */
+
+.producto:nth-last-child(2) {
+    transform: translateX(140px);
+}
+
+.producto:nth-last-child(2):hover {
+    transform: translateX(140px) translateY(-8px);
+}
+
+.producto:last-child {
+    transform: translateX(140px);
+}
+
+.producto:last-child:hover {
+    transform: translateX(140px) translateY(-8px);
+}
