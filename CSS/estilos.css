@@ -1,4 +1,10 @@
-/* ===== ESTILOS GENERALES ===== */
+/* ================================================= */
+/*                  ESTILOS GENERALES                */
+/* ================================================= */
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: #F5F1E8;
@@ -6,73 +12,103 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+
     font-family: Arial, sans-serif;
+
     margin: 0;
     padding: 0;
+
     color: #344E41;
 }
 
 
-/* ===== MENU DE NAVEGACION ===== */
+/* ================================================= */
+/*                       MENU                       */
+/* ================================================= */
 
 .menu {
     display: flex;
+
     justify-content: center;
     align-items: center;
+
     gap: 35px;
+
     padding: 10px 25px;
+
     position: sticky;
     top: 0;
+
     z-index: 1000;
+
     background-color: rgba(245, 241, 232, 0.95);
     backdrop-filter: blur(8px);
 }
 
 
-/* ===== LOGO PEQUEÑO DEL MENU ===== */
+/* ================================================= */
+/*                  LOGO DEL MENU                    */
+/* ================================================= */
 
 .menu .logo-menu {
     position: absolute;
+
     left: 25px;
     top: 50%;
+
     transform: translateY(-50%);
-    margin: 0;
 }
 
 .menu .logo-menu img {
     width: 70px;
     height: auto;
+
     display: block;
 }
 
 
-/* ===== ENLACES DEL MENU ===== */
+/* ================================================= */
+/*                  ENLACES DEL MENU                 */
+/* ================================================= */
 
 .menu > a:not(.logo-menu) {
     color: #315f3b;
+
     text-decoration: none;
+
     font-size: 17px;
     font-weight: bold;
+
     position: relative;
+
     padding: 5px 0;
 }
 
 
-/* ===== LINEA DEBAJO DEL MENU ===== */
+/* ================================================= */
+/*                 LINEA DEL MENU                    */
+/* ================================================= */
 
 .menu > a:not(.logo-menu)::after {
     content: "";
+
     position: absolute;
+
     width: 0;
     height: 2px;
+
     background-color: #6b8e5a;
+
     left: 50%;
     bottom: 0;
+
     transition: 0.3s;
 }
 
 
-/* ===== EFECTO DEL MENU ===== */
+/* ================================================= */
+/*                    HOVER                          */
+/* ================================================= */
 
 .menu > a:not(.logo-menu):hover {
     color: #6b8e5a;
@@ -84,106 +120,181 @@ body {
 }
 
 
-/* ===== LOGO PRINCIPAL ===== */
+/* ================================================= */
+/*              BOTON HAMBURGUESA                    */
+/* ================================================= */
+
+.menu-toggle {
+    display: none;
+
+    background: none;
+    border: none;
+
+    font-size: 32px;
+    line-height: 1;
+
+    color: #315f3b;
+
+    cursor: pointer;
+
+    padding: 5px;
+}
+
+
+/* ================================================= */
+/*                 LOGO PRINCIPAL                    */
+/* ================================================= */
 
 .logo {
     display: block;
+
     width: 500px;
     max-width: 80%;
+
     margin: 20px auto 10px;
 }
 
 
-/* ===== TEXTO DE PRESENTACION ===== */
+/* ================================================= */
+/*              TEXTO DE PRESENTACION               */
+/* ================================================= */
 
 body > p {
     text-align: center;
+
     font-size: 20px;
 }
 
 
-/* ===== TITULOS DE SECCION ===== */
+/* ================================================= */
+/*                     TITULOS                       */
+/* ================================================= */
 
 h2 {
     text-align: center;
+
     color: #386641;
+
     font-size: 32px;
+
     margin-top: 60px;
     margin-bottom: 30px;
+
+    scroll-margin-top: 80px;
 }
 
 
-/* ===== CONTENEDOR DE PRODUCTOS ===== */
+/* ================================================= */
+/*                   PRODUCTOS                       */
+/* ================================================= */
 
 .productos {
     display: grid;
+
     grid-template-columns: repeat(3, 280px);
+
     gap: 25px;
+
     max-width: 1100px;
+
     margin: 40px auto;
+
     padding: 20px;
+
     justify-content: center;
 }
 
 
-/* ===== TARJETAS DE PRODUCTOS ===== */
+/* ================================================= */
+/*                TARJETAS PRODUCTOS                 */
+/* ================================================= */
 
 .producto {
     background-color: white;
+
     padding: 20px;
+
     border-radius: 15px;
+
     text-align: center;
+
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 
-/* ===== EFECTO AL PASAR EL MOUSE ===== */
+/* ================================================= */
+/*                     HOVER                         */
+/* ================================================= */
 
 .producto:hover {
     transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 
-/* ===== IMAGENES DE PRODUCTOS ===== */
+/* ================================================= */
+/*                IMAGENES PRODUCTOS                 */
+/* ================================================= */
 
 .producto img {
     width: 100%;
+
     max-width: 220px;
+
     height: 220px;
+
     object-fit: cover;
+
     border-radius: 10px;
-        transition: transform 0.3s ease;
+
+    transition: transform 0.3s ease;
 }
- .producto:hover img {
+
+.producto:hover img {
     transform: scale(1.05);
 }
 
-/* ===== NOMBRE DEL PRODUCTO ===== */
+
+/* ================================================= */
+/*                  NOMBRE PRODUCTO                  */
+/* ================================================= */
 
 .producto h3 {
     color: #315f3b;
+
     font-size: 20px;
 }
 
 
-/* ===== DESCRIPCION DEL PRODUCTO ===== */
+/* ================================================= */
+/*                DESCRIPCION PRODUCTO               */
+/* ================================================= */
 
 .producto p {
     font-size: 14px;
+
     line-height: 1.5;
 }
 
 
-/* ===== CENTRAR LOS DOS ULTIMOS PRODUCTOS ===== */
+/* ================================================= */
+/*          ULTIMOS PRODUCTOS EN COMPUTADORA         */
+/* ================================================= */
 
 .producto:nth-last-child(2) {
     transform: translateX(140px);
 }
 
 .producto:nth-last-child(2):hover {
-    transform: translateX(140px) translateY(-8px);
+    transform:
+        translateX(140px)
+        translateY(-8px);
 }
 
 .producto:last-child {
@@ -191,5 +302,410 @@ h2 {
 }
 
 .producto:last-child:hover {
-    transform: translateX(140px) translateY(-8px);
+    transform:
+        translateX(140px)
+        translateY(-8px);
+}
+
+
+/* ================================================= */
+/*                     FOOTER                        */
+/* ================================================= */
+
+footer {
+    text-align: center;
+
+    background-color: rgba(245, 241, 232, 0.95);
+
+    padding: 25px;
+
+    margin-top: 60px;
+
+    color: #315f3b;
+
+    font-size: 14px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+/* ================================================= */
+/*                  TABLET                           */
+/*              601px - 900px                       */
+/* ================================================= */
+
+@media (min-width: 601px) and (max-width: 900px) {
+
+    /* ---------- MENU ---------- */
+
+    .menu {
+        position: fixed;
+
+        top: 0;
+        left: 0;
+
+        width: 100%;
+
+        box-sizing: border-box;
+
+        min-height: 65px;
+
+        padding: 10px 20px;
+
+        justify-content: flex-end;
+
+        gap: 0;
+
+        flex-wrap: wrap;
+
+        z-index: 9999;
+    }
+
+
+    body {
+        padding-top: 65px;
+    }
+
+
+    /* ---------- LOGO PEQUEÑO ---------- */
+
+    .menu .logo-menu {
+        left: 20px;
+    }
+
+    .menu .logo-menu img {
+        width: 70px;
+    }
+
+
+    /* ---------- HAMBURGUESA ---------- */
+
+    .menu-toggle {
+        display: block;
+
+        position: absolute;
+
+        right: 20px;
+        top: 50%;
+
+        transform: translateY(-50%);
+
+        z-index: 10000;
+    }
+
+
+    /* ---------- ENLACES OCULTOS ---------- */
+
+    .menu > a:not(.logo-menu) {
+        display: none;
+
+        width: 100%;
+
+        text-align: center;
+
+        padding: 10px 0;
+
+        font-size: 18px;
+    }
+
+
+    /* ---------- MENU ABIERTO ---------- */
+
+    .menu.menu-abierto {
+        padding-bottom: 15px;
+    }
+
+    .menu.menu-abierto > a:not(.logo-menu) {
+        display: block;
+    }
+
+
+    .menu > a:not(.logo-menu)::after {
+        display: none;
+    }
+
+
+    /* ---------- LOGO PRINCIPAL ---------- */
+
+    .logo {
+        width: 420px;
+        max-width: 85%;
+    }
+
+
+    /* ---------- TITULOS ---------- */
+
+    h2 {
+        font-size: 30px;
+    }
+
+
+    /* ---------- PRODUCTOS ---------- */
+
+    .productos {
+        grid-template-columns: repeat(2, 280px);
+
+        gap: 25px;
+
+        padding: 20px;
+    }
+
+
+    /* ---------- QUITAR DESPLAZAMIENTO ---------- */
+
+    .producto:nth-last-child(2),
+    .producto:last-child {
+        transform: none;
+    }
+
+    .producto:nth-last-child(2):hover,
+    .producto:last-child:hover {
+        transform: translateY(-8px);
+    }
+
+}
+
+
+/* ================================================= */
+/*                  TELEFONO                         */
+/*                   0 - 600px                       */
+/* ================================================= */
+
+@media (max-width: 600px) {
+
+    /* ---------- MENU ---------- */
+
+    .menu {
+        position: fixed;
+
+        top: 0;
+        left: 0;
+
+        width: 100%;
+
+        min-height: 60px;
+
+        box-sizing: border-box;
+
+        padding: 10px 20px;
+
+        display: flex;
+
+        justify-content: flex-end;
+        align-items: center;
+
+        gap: 0;
+
+        flex-wrap: wrap;
+
+        z-index: 9999;
+
+        background-color: rgba(245, 241, 232, 0.97);
+
+        backdrop-filter: blur(8px);
+    }
+
+
+    /* ---------- ESPACIO PARA MENU ---------- */
+
+    body {
+        padding-top: 60px;
+    }
+
+
+    /* ---------- LOGO PEQUEÑO ---------- */
+
+    .menu .logo-menu {
+        position: absolute;
+
+        left: 20px;
+        top: 50%;
+
+        transform: translateY(-50%);
+    }
+
+    .menu .logo-menu img {
+        width: 70px;
+        height: auto;
+    }
+
+
+    /* ---------- HAMBURGUESA ---------- */
+
+    .menu-toggle {
+        display: block !important;
+
+        position: absolute;
+
+        right: 15px;
+        top: 50%;
+
+        transform: translateY(-50%);
+
+        background: none;
+
+        border: none;
+
+        font-size: 32px;
+
+        line-height: 1;
+
+        color: #315f3b;
+
+        cursor: pointer;
+
+        padding: 5px;
+
+        z-index: 10000;
+    }
+
+
+    /* ---------- ENLACES OCULTOS ---------- */
+
+    .menu > a:not(.logo-menu) {
+        display: none;
+
+        width: 100%;
+
+        text-align: center;
+
+        padding: 10px 0;
+
+        margin: 0;
+
+        font-size: 18px;
+    }
+
+
+    /* ---------- MENU ABIERTO ---------- */
+
+    .menu.menu-abierto {
+        padding-bottom: 15px;
+    }
+
+    .menu.menu-abierto > a:not(.logo-menu) {
+        display: block;
+    }
+
+
+    /* ---------- SIN HOVER ---------- */
+
+    .menu > a:not(.logo-menu)::after {
+        display: none;
+    }
+
+
+    /* ---------- LOGO PRINCIPAL ---------- */
+
+    .logo {
+        width: 350px;
+
+        max-width: 90%;
+
+        margin: 20px auto 10px;
+    }
+
+
+    /* ---------- PRESENTACION ---------- */
+
+    body > p {
+        font-size: 18px;
+
+        padding: 0 20px;
+    }
+
+
+    /* ---------- TITULOS ---------- */
+
+    h2 {
+        font-size: 28px;
+
+        margin-top: 45px;
+        margin-bottom: 25px;
+
+        scroll-margin-top: 75px;
+    }
+
+
+    /* ---------- PRODUCTOS ---------- */
+
+    .productos {
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        width: 100%;
+
+        max-width: 100%;
+
+        box-sizing: border-box;
+
+        gap: 25px;
+
+        padding: 15px 20px;
+
+        margin: 30px auto;
+    }
+
+
+    /* ---------- TARJETA ---------- */
+
+    .producto {
+        width: 100%;
+
+        box-sizing: border-box;
+
+        padding: 20px;
+    }
+
+
+    /* ---------- IMAGEN ---------- */
+
+    .producto img {
+        width: 100%;
+
+        max-width: 280px;
+
+        height: auto;
+
+        aspect-ratio: 1 / 1;
+
+        object-fit: cover;
+    }
+
+
+    /* ---------- ULTIMOS PRODUCTOS ---------- */
+
+    .producto:nth-last-child(2),
+    .producto:last-child {
+        transform: none;
+    }
+
+    .producto:nth-last-child(2):hover,
+    .producto:last-child:hover {
+        transform: translateY(-8px);
+    }
+
+
+    /* ---------- TEXTO PRODUCTO ---------- */
+
+    .producto h3 {
+        font-size: 21px;
+    }
+
+    .producto p {
+        font-size: 15px;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    footer {
+        padding: 20px 10px;
+
+        font-size: 13px;
+    }
+
 }

@@ -19,7 +19,7 @@
         <a href="#inicio" class="logo-menu">
             <img src="IMAGENES/logo-shaol.png" alt="ShaOl">
         </a>
-
+<button class="menu-toggle">☰</button>
         <a href="#inicio">Inicio</a>
         <a href="#jabones">Jabones</a>
         <a href="#capilar">Cuidado capilar</a>
@@ -246,9 +246,35 @@
         <h3>Exfoliantes Naturales</h3>
         <p>Exfoliantes veganos y naturales para renovar y cuidar la piel.</p>
     </div>
+<script>
+    const menuToggle = document.querySelector(".menu-toggle");
+    const menu = document.querySelector(".menu");
+    const menuLinks = document.querySelectorAll(".menu > a:not(.logo-menu)");
 
+    menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("menu-abierto");
+
+        if (menu.classList.contains("menu-abierto")) {
+            menuToggle.textContent = "✕";
+        } else {
+            menuToggle.textContent = "☰";
+        }
+    });
+
+    menuLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            menu.classList.remove("menu-abierto");
+            menuToggle.textContent = "☰";
+        });
+    });
+</script>
 </div>
 
 </body>
 
 </html>
+
+<footer>
+    <p>© 2026 ShaOl Artesanal & Natural</p>
+    <p>Productos veganos, naturales y hechos con amor 🌿</p>
+</footer>
