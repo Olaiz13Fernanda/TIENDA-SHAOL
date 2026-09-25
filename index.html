@@ -2,19 +2,13 @@
 <html lang="es">
 
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Tienda ShaOl</title>
 
-    <link rel="stylesheet"
-        href="CSS/estilos.css">
-
+    <link rel="stylesheet" href="CSS/estilos.css">
 </head>
-
 
 <body>
 
@@ -22,77 +16,44 @@
 
 
     <!-- =============================== -->
-    <!--              MENU               -->
+    <!--             MENÚ                -->
     <!-- =============================== -->
 
     <nav class="menu">
 
-        <a href="#inicio"
-            class="logo-menu">
-
-            <img
-                src="IMAGENES/logo-shaol.png"
-                alt="ShaOl">
-
+        <a href="#inicio" class="logo-menu">
+            <img src="IMAGENES/logo-shaol.png" alt="ShaOl">
         </a>
 
+        <button class="menu-toggle" type="button">☰</button>
 
-        <button
-            class="menu-toggle"
-            type="button">
-
-            ☰
-
-        </button>
-
-
-        <!-- CARRITO -->
+        <a href="#inicio">Inicio</a>
+        <a href="#jabones">Jabones</a>
+        <a href="#capilar">Cuidado capilar</a>
+        <a href="#corporal">Cuidado corporal</a>
 
         <button
             id="boton-carrito"
             type="button"
-            onclick="mostrarCarrito()">
-
-            Carrito
-            (<span id="contador-carrito">0</span>)
-
+            onclick="mostrarCarrito()"
+        >
+            Carrito (<span id="contador-carrito">0</span>)
         </button>
-
-
-        <a href="#inicio">
-            Inicio
-        </a>
-
-
-        <a href="#jabones">
-            Jabones
-        </a>
-
-
-        <a href="#capilar">
-            Cuidado capilar
-        </a>
-
-
-        <a href="#corporal">
-            Cuidado corporal
-        </a>
 
     </nav>
 
 
-
     <!-- =============================== -->
-    <!--              LOGO               -->
+    <!--             INICIO              -->
     <!-- =============================== -->
 
-    <a href="#inicio"
-        class="logo-link">
+    <a href="#inicio" class="logo-link">
 
         <img
             class="logo"
             src="IMAGENES/logo-shaol.png"
-            alt="Logo ShaOl">
+            alt="Logo ShaOl"
+        >
 
     </a>
 
@@ -102,32 +63,28 @@
     </p>
 
 
-
     <!-- =============================== -->
     <!--             JABONES             -->
     <!-- =============================== -->
 
-    <h2 id="jabones">
-        Nuestros productos
-    </h2>
-
+    <h2 id="jabones">Nuestros productos</h2>
 
     <div class="productos">
 
 
-        <!-- 1 -->
+        <!-- Jabón de Coco -->
 
         <div
             class="producto"
-            onclick="abrirProducto('Jabón de Coco')">
+            onclick="abrirProducto('Jabón de Coco')"
+        >
 
             <img
                 src="IMAGENES/jabon-coco.jpg"
-                alt="Jabón de Coco">
+                alt="Jabón de Coco"
+            >
 
-            <h3>
-                Jabón de Coco
-            </h3>
+            <h3>Jabón de Coco</h3>
 
             <p>
                 Jabón artesanal de coco con hidratación profunda
@@ -137,20 +94,19 @@
         </div>
 
 
-
-        <!-- 2 -->
+        <!-- Jabón de Arroz -->
 
         <div
             class="producto"
-            onclick="abrirProducto('Jabón de Arroz')">
+            onclick="abrirProducto('Jabón de Arroz')"
+        >
 
             <img
                 src="IMAGENES/jabon-arroz.jpg"
-                alt="Jabón de Arroz">
+                alt="Jabón de Arroz"
+            >
 
-            <h3>
-                Jabón de Arroz
-            </h3>
+            <h3>Jabón de Arroz</h3>
 
             <p>
                 Jabón artesanal de arroz para el cuidado
@@ -160,20 +116,19 @@
         </div>
 
 
-
-        <!-- 3 -->
+        <!-- Jabón de Arroz y Avena -->
 
         <div
             class="producto"
-            onclick="abrirProducto('Jabón de Arroz y Avena')">
+            onclick="abrirProducto('Jabón de Arroz y Avena')"
+        >
 
             <img
                 src="IMAGENES/jabon-arroz-avena.jpg"
-                alt="Jabón de Arroz y Avena">
+                alt="Jabón de Arroz y Avena"
+            >
 
-            <h3>
-                Jabón de Arroz y Avena
-            </h3>
+            <h3>Jabón de Arroz y Avena</h3>
 
             <p>
                 Jabón con exfoliación delicada, hidratación
@@ -183,20 +138,19 @@
         </div>
 
 
-
-        <!-- 4 -->
+        <!-- Jabón de Avena y Miel -->
 
         <div
             class="producto"
-            onclick="abrirProducto('Jabón de Avena y Miel')">
+            onclick="abrirProducto('Jabón de Avena y Miel')"
+        >
 
             <img
                 src="IMAGENES/jabon-avena-miel.jpg"
-                alt="Jabón de Avena y Miel">
+                alt="Jabón de Avena y Miel"
+            >
 
-            <h3>
-                Jabón de Avena y Miel
-            </h3>
+            <h3>Jabón de Avena y Miel</h3>
 
             <p>
                 Jabón artesanal con hidratación, nutrición
@@ -206,20 +160,19 @@
         </div>
 
 
-
-        <!-- 5 -->
+        <!-- Jabón de Romero -->
 
         <div
             class="producto"
-            onclick="abrirProducto('Jabón de Romero')">
+            onclick="abrirProducto('Jabón de Romero')"
+        >
 
             <img
                 src="IMAGENES/jabon-romero.jpg"
-                alt="Jabón de Romero">
+                alt="Jabón de Romero"
+            >
 
-            <h3>
-                Jabón de Romero
-            </h3>
+            <h3>Jabón de Romero</h3>
 
             <p>
                 Jabón artesanal de romero para el cuidado
@@ -229,20 +182,19 @@
         </div>
 
 
-
-        <!-- 6 -->
+        <!-- Jabón de Pericón -->
 
         <div
             class="producto"
-            onclick="abrirProducto('Jabón de Pericón')">
+            onclick="abrirProducto('Jabón de Pericón')"
+        >
 
             <img
                 src="IMAGENES/jabon-pericon.jpg"
-                alt="Jabón de Pericón">
+                alt="Jabón de Pericón"
+            >
 
-            <h3>
-                Jabón de Pericón
-            </h3>
+            <h3>Jabón de Pericón</h3>
 
             <p>
                 Jabón artesanal elaborado con pericón.
@@ -251,20 +203,19 @@
         </div>
 
 
-
-        <!-- 7 -->
+        <!-- Jabón de Manzanilla -->
 
         <div
             class="producto"
-            onclick="abrirProducto('Jabón de Manzanilla')">
+            onclick="abrirProducto('Jabón de Manzanilla')"
+        >
 
             <img
                 src="IMAGENES/jaon-manzanilla.jpg"
-                alt="Jabón de Manzanilla">
+                alt="Jabón de Manzanilla"
+            >
 
-            <h3>
-                Jabón de Manzanilla
-            </h3>
+            <h3>Jabón de Manzanilla</h3>
 
             <p>
                 Jabón artesanal de manzanilla para una
@@ -274,20 +225,19 @@
         </div>
 
 
-
-        <!-- 8 -->
+        <!-- Jabón de Carbón Activado -->
 
         <div
             class="producto"
-            onclick="abrirProducto('Jabón de Carbón Activado')">
+            onclick="abrirProducto('Jabón de Carbón Activado')"
+        >
 
             <img
                 src="IMAGENES/jabon-carbon.jpg"
-                alt="Jabón de Carbón Activado">
+                alt="Jabón de Carbón Activado"
+            >
 
-            <h3>
-                Jabón de Carbón Activado
-            </h3>
+            <h3>Jabón de Carbón Activado</h3>
 
             <p>
                 Jabón artesanal de carbón activado para
@@ -297,20 +247,19 @@
         </div>
 
 
-
-        <!-- 9 -->
+        <!-- Jabón de Cúrcuma -->
 
         <div
             class="producto"
-            onclick="abrirProducto('Jabón de Cúrcuma')">
+            onclick="abrirProducto('Jabón de Cúrcuma')"
+        >
 
             <img
                 src="IMAGENES/jabon-curcuma.jpg"
-                alt="Jabón de Cúrcuma">
+                alt="Jabón de Cúrcuma"
+            >
 
-            <h3>
-                Jabón de Cúrcuma
-            </h3>
+            <h3>Jabón de Cúrcuma</h3>
 
             <p>
                 Jabón artesanal de cúrcuma para el cuidado
@@ -320,20 +269,19 @@
         </div>
 
 
-
-        <!-- 10 -->
+        <!-- Jabón de Manzanilla con Arroz -->
 
         <div
             class="producto"
-            onclick="abrirProducto('Jabón de Manzanilla con Arroz')">
+            onclick="abrirProducto('Jabón de Manzanilla con Arroz')"
+        >
 
             <img
                 src="IMAGENES/jabon-mazanila-arroz.jpg"
-                alt="Jabón de Manzanilla con Arroz">
+                alt="Jabón de Manzanilla con Arroz"
+            >
 
-            <h3>
-                Jabón de Manzanilla con Arroz
-            </h3>
+            <h3>Jabón de Manzanilla con Arroz</h3>
 
             <p>
                 Jabón natural y vegano con manzanilla y arroz.
@@ -342,20 +290,19 @@
         </div>
 
 
-
-        <!-- 11 -->
+        <!-- Jabón de Arcilla Roja -->
 
         <div
             class="producto"
-            onclick="abrirProducto('Jabón de Arcilla Roja')">
+            onclick="abrirProducto('Jabón de Arcilla Roja')"
+        >
 
             <img
                 src="IMAGENES/jabon-arcillar.jpg"
-                alt="Jabón de Arcilla Roja">
+                alt="Jabón de Arcilla Roja"
+            >
 
-            <h3>
-                Jabón de Arcilla Roja
-            </h3>
+            <h3>Jabón de Arcilla Roja</h3>
 
             <p>
                 Jabón artesanal de arcilla roja para una
@@ -365,20 +312,19 @@
         </div>
 
 
-
-        <!-- 12 -->
+        <!-- Jabón de Arcilla Verde y Menta -->
 
         <div
             class="producto"
-            onclick="abrirProducto('Jabón de Arcilla Verde y Menta')">
+            onclick="abrirProducto('Jabón de Arcilla Verde y Menta')"
+        >
 
             <img
                 src="IMAGENES/jabon-arc-verde-menta.jpg"
-                alt="Jabón de Arcilla Verde y Menta">
+                alt="Jabón de Arcilla Verde y Menta"
+            >
 
-            <h3>
-                Jabón de Arcilla Verde y Menta
-            </h3>
+            <h3>Jabón de Arcilla Verde y Menta</h3>
 
             <p>
                 Jabón artesanal de arcilla verde y menta.
@@ -387,43 +333,40 @@
         </div>
 
 
-
-        <!-- 13 -->
+        <!-- Jabón de Arcilla Negra y Carbón Activado -->
 
         <div
             class="producto"
-            onclick="abrirProducto('Jabón de Arcilla Negra y Carbón Activado')">
+            onclick="abrirProducto('Jabón de Arcilla Negra y Carbón Activado')"
+        >
 
             <img
                 src="IMAGENES/jabon-arc-negra-carbon.jpg"
-                alt="Jabón de Arcilla Negra y Carbón Activado">
+                alt="Jabón de Arcilla Negra y Carbón Activado"
+            >
 
-            <h3>
-                Jabón de Arcilla Negra y Carbón Activado
-            </h3>
+            <h3>Jabón de Arcilla Negra y Carbón Activado</h3>
 
             <p>
-                Jabón artesanal de arcilla negra
-                y carbón activado.
+                Jabón artesanal de arcilla negra y carbón activado.
             </p>
 
         </div>
 
 
-
-        <!-- 14 -->
+        <!-- Jabón de Arroz y Miel -->
 
         <div
             class="producto"
-            onclick="abrirProducto('Jabón de Arroz y Miel')">
+            onclick="abrirProducto('Jabón de Arroz y Miel')"
+        >
 
             <img
                 src="IMAGENES/jabon-arroz-miel.jpg"
-                alt="Jabón de Arroz y Miel">
+                alt="Jabón de Arroz y Miel"
+            >
 
-            <h3>
-                Jabón de Arroz y Miel
-            </h3>
+            <h3>Jabón de Arroz y Miel</h3>
 
             <p>
                 Jabón artesanal de arroz y miel para el
@@ -435,47 +378,48 @@
     </div>
 
 
-
     <!-- =============================== -->
-    <!--         CUIDADO CAPILAR         -->
+    <!--        CUIDADO CAPILAR          -->
     <!-- =============================== -->
 
-    <h2 id="capilar">
-        Cuidado capilar
-    </h2>
-
+    <h2 id="capilar">Cuidado capilar</h2>
 
     <div class="productos">
 
 
+        <!-- Shampoo Sólido Anticaída -->
+
         <div
             class="producto"
-            onclick="abrirProducto('Shampoo Sólido Anticaída')">
+            onclick="abrirProducto('Shampoo Sólido Anticaída')"
+        >
 
             <img
                 src="IMAGENES/Sham-anticaida.jpg"
-                alt="Shampoo Sólido Anticaída">
+                alt="Shampoo Sólido Anticaída"
+            >
 
-            <h3>
-                Shampoo Sólido Anticaída
-            </h3>
+            <h3>Shampoo Sólido Anticaída</h3>
 
             <p>
-                Shampoo sólido elaborado con ingredientes
-                naturales para el cuidado del cabello.
+                Shampoo sólido elaborado con ingredientes naturales
+                para el cuidado del cabello.
             </p>
 
         </div>
 
 
+        <!-- Shampoo Sólido de Crecimiento e Hidratación -->
 
         <div
             class="producto"
-            onclick="abrirProducto('Shampoo Sólido de Crecimiento e Hidratación')">
+            onclick="abrirProducto('Shampoo Sólido de Crecimiento e Hidratación')"
+        >
 
             <img
                 src="IMAGENES/shamcreci.hidra.jpg"
-                alt="Shampoo Sólido de Crecimiento e Hidratación">
+                alt="Shampoo Sólido de Crecimiento e Hidratación"
+            >
 
             <h3>
                 Shampoo Sólido de Crecimiento e Hidratación
@@ -489,18 +433,19 @@
         </div>
 
 
+        <!-- Shampoo para Cabello Graso -->
 
         <div
             class="producto"
-            onclick="abrirProducto('Shampoo para Cabello Graso')">
+            onclick="abrirProducto('Shampoo para Cabello Graso')"
+        >
 
             <img
                 src="IMAGENES/shamgrasa.jpg"
-                alt="Shampoo para Cabello Graso">
+                alt="Shampoo para Cabello Graso"
+            >
 
-            <h3>
-                Shampoo para Cabello Graso
-            </h3>
+            <h3>Shampoo para Cabello Graso</h3>
 
             <p>
                 Shampoo sólido pensado para el cuidado
@@ -510,18 +455,19 @@
         </div>
 
 
+        <!-- Acondicionador Sólido -->
 
         <div
             class="producto"
-            onclick="abrirProducto('Acondicionador Sólido')">
+            onclick="abrirProducto('Acondicionador Sólido')"
+        >
 
             <img
                 src="IMAGENES/sacondicionador.jpg"
-                alt="Acondicionador Sólido">
+                alt="Acondicionador Sólido"
+            >
 
-            <h3>
-                Acondicionador Sólido
-            </h3>
+            <h3>Acondicionador Sólido</h3>
 
             <p>
                 Acondicionador sólido para hidratar
@@ -531,18 +477,19 @@
         </div>
 
 
+        <!-- Dúo de Shampoo y Acondicionador -->
 
         <div
             class="producto"
-            onclick="abrirProducto('Dúo de Shampoo y Acondicionador')">
+            onclick="abrirProducto('Dúo de Shampoo y Acondicionador')"
+        >
 
             <img
                 src="IMAGENES/shamsuoacondicionar.jpg"
-                alt="Dúo de Shampoo y Acondicionador">
+                alt="Dúo de Shampoo y Acondicionador"
+            >
 
-            <h3>
-                Dúo de Shampoo y Acondicionador
-            </h3>
+            <h3>Dúo de Shampoo y Acondicionador</h3>
 
             <p>
                 Kit de cuidado capilar con shampoo
@@ -554,30 +501,28 @@
     </div>
 
 
-
     <!-- =============================== -->
     <!--        CUIDADO CORPORAL         -->
     <!-- =============================== -->
 
-    <h2 id="corporal">
-        Cuidado corporal
-    </h2>
-
+    <h2 id="corporal">Cuidado corporal</h2>
 
     <div class="productos">
 
 
+        <!-- Mantequillas Corporales -->
+
         <div
             class="producto"
-            onclick="abrirProducto('Mantequillas Corporales')">
+            onclick="abrirProducto('Mantequillas Corporales')"
+        >
 
             <img
                 src="IMAGENES/corporalmantequilla.jpg"
-                alt="Mantequillas Corporales">
+                alt="Mantequillas Corporales"
+            >
 
-            <h3>
-                Mantequillas Corporales
-            </h3>
+            <h3>Mantequillas Corporales</h3>
 
             <p>
                 Mantequillas corporales veganas y naturales
@@ -587,18 +532,19 @@
         </div>
 
 
+        <!-- Exfoliantes Naturales -->
 
         <div
             class="producto"
-            onclick="abrirProducto('Exfoliantes Naturales')">
+            onclick="abrirProducto('Exfoliantes Naturales')"
+        >
 
             <img
                 src="IMAGENES/corporalexfoliante.jpeg"
-                alt="Exfoliantes Naturales">
+                alt="Exfoliantes Naturales"
+            >
 
-            <h3>
-                Exfoliantes Naturales
-            </h3>
+            <h3>Exfoliantes Naturales</h3>
 
             <p>
                 Exfoliantes veganos y naturales para renovar
@@ -610,23 +556,360 @@
     </div>
 
 
-
     <!-- =============================== -->
     <!--             SCRIPT              -->
     <!-- =============================== -->
 
     <script>
 
-        /* =============================== */
-        /*             CARRITO             */
-        /* =============================== */
-
         let carrito = [];
 
 
-        /* =============================== */
-        /*        AGREGAR PRODUCTO         */
-        /* =============================== */
+        /* =========================================
+           PRODUCTOS
+        ========================================= */
+
+        const productos = {
+
+            /* ===== JABONES $60 ===== */
+
+            "Jabón de Coco": {
+                imagen: "IMAGENES/jabon-coco.jpg",
+                descripcion:
+                    "Jabón artesanal de coco con hidratación profunda y nutrición natural.",
+                precio: 60,
+                lanzamiento: false
+            },
+
+            "Jabón de Arroz": {
+                imagen: "IMAGENES/jabon-arroz.jpg",
+                descripcion:
+                    "Jabón artesanal de arroz para el cuidado e hidratación de la piel.",
+                precio: 60,
+                lanzamiento: false
+            },
+
+            "Jabón de Arroz y Avena": {
+                imagen: "IMAGENES/jabon-arroz-avena.jpg",
+                descripcion:
+                    "Jabón con exfoliación delicada, hidratación y nutrición natural.",
+                precio: 60,
+                lanzamiento: false
+            },
+
+            "Jabón de Avena y Miel": {
+                imagen: "IMAGENES/jabon-avena-miel.jpg",
+                descripcion:
+                    "Jabón artesanal con hidratación, nutrición y cuidado de la piel.",
+                precio: 60,
+                lanzamiento: false
+            },
+
+            "Jabón de Romero": {
+                imagen: "IMAGENES/jabon-romero.jpg",
+                descripcion:
+                    "Jabón artesanal de romero para el cuidado y limpieza de la piel.",
+                precio: 60,
+                lanzamiento: false
+            },
+
+            "Jabón de Pericón": {
+                imagen: "IMAGENES/jabon-pericon.jpg",
+                descripcion:
+                    "Jabón artesanal elaborado con pericón.",
+                precio: 60,
+                lanzamiento: false
+            },
+
+            "Jabón de Manzanilla": {
+                imagen: "IMAGENES/jaon-manzanilla.jpg",
+                descripcion:
+                    "Jabón artesanal de manzanilla para una limpieza suave.",
+                precio: 60,
+                lanzamiento: false
+            },
+
+            "Jabón de Carbón Activado": {
+                imagen: "IMAGENES/jabon-carbon.jpg",
+                descripcion:
+                    "Jabón artesanal de carbón activado para una limpieza profunda.",
+                precio: 60,
+                lanzamiento: false
+            },
+
+            "Jabón de Cúrcuma": {
+                imagen: "IMAGENES/jabon-curcuma.jpg",
+                descripcion:
+                    "Jabón artesanal de cúrcuma para el cuidado de la piel.",
+                precio: 60,
+                lanzamiento: false
+            },
+
+            "Jabón de Manzanilla con Arroz": {
+                imagen: "IMAGENES/jabon-mazanila-arroz.jpg",
+                descripcion:
+                    "Jabón natural y vegano con manzanilla y arroz.",
+                precio: 60,
+                lanzamiento: false
+            },
+
+            "Jabón de Arcilla Roja": {
+                imagen: "IMAGENES/jabon-arcillar.jpg",
+                descripcion:
+                    "Jabón artesanal de arcilla roja para una limpieza y cuidado natural.",
+                precio: 60,
+                lanzamiento: false
+            },
+
+            "Jabón de Arcilla Verde y Menta": {
+                imagen: "IMAGENES/jabon-arc-verde-menta.jpg",
+                descripcion:
+                    "Jabón artesanal de arcilla verde y menta.",
+                precio: 60,
+                lanzamiento: false
+            },
+
+            "Jabón de Arcilla Negra y Carbón Activado": {
+                imagen: "IMAGENES/jabon-arc-negra-carbon.jpg",
+                descripcion:
+                    "Jabón artesanal de arcilla negra y carbón activado.",
+                precio: 60,
+                lanzamiento: false
+            },
+
+            "Jabón de Arroz y Miel": {
+                imagen: "IMAGENES/jabon-arroz-miel.jpg",
+                descripcion:
+                    "Jabón artesanal de arroz y miel para el cuidado natural de la piel.",
+                precio: 60,
+                lanzamiento: false
+            },
+
+
+            /* ===== CAPILARES ===== */
+
+            "Shampoo Sólido Anticaída": {
+                imagen: "IMAGENES/Sham-anticaida.jpg",
+                descripcion:
+                    "Shampoo sólido elaborado con ingredientes naturales para el cuidado del cabello.",
+                precio: 190,
+                lanzamiento: false
+                
+            },
+
+            "Shampoo Sólido de Crecimiento e Hidratación": {
+                imagen: "IMAGENES/shamcreci.hidra.jpg",
+                descripcion:
+                    "Shampoo sólido con ingredientes seleccionados para el cuidado capilar.",
+                precio: 190,
+                lanzamiento: false
+            },
+
+            "Shampoo para Cabello Graso": {
+                imagen: "IMAGENES/shamgrasa.jpg",
+                descripcion:
+                    "Shampoo sólido pensado para el cuidado del cabello graso.",
+                precio: 190,
+                lanzamiento: false
+            },
+
+            "Acondicionador Sólido": {
+                imagen: "IMAGENES/sacondicionador.jpg",
+                descripcion:
+                    "Acondicionador sólido para hidratar y cuidar el cabello.",
+                precio: 130,
+                lanzamiento: false
+            },
+
+            "Dúo de Shampoo y Acondicionador": {
+                imagen: "IMAGENES/shamsuoacondicionar.jpg",
+                descripcion:
+                    "Kit de cuidado capilar con shampoo y acondicionador sólido.",
+                precio: 250,
+                lanzamiento: true
+            },
+
+
+            /* ===== CORPORAL ===== */
+
+            "Mantequillas Corporales": {
+                imagen: "IMAGENES/corporalmantequilla.jpg",
+                descripcion:
+                    "Mantequillas corporales veganas y naturales para el cuidado de la piel.",
+                precio: 70,
+                lanzamiento: false
+            },
+
+            "Exfoliantes Naturales": {
+                imagen: "IMAGENES/corporalexfoliante.jpeg",
+                descripcion:
+                    "Exfoliantes veganos y naturales para renovar y cuidar la piel.",
+                precio: 130,
+                lanzamiento: false
+            }
+
+        };
+
+
+        /* =========================================
+           ABRIR PRODUCTO
+        ========================================= */
+
+        function abrirProducto(nombreProducto) {
+
+            const producto = productos[nombreProducto];
+
+            if (!producto) {
+                return;
+            }
+
+
+            const ventana =
+                document.createElement("div");
+
+            ventana.classList.add(
+                "ventana-producto"
+            );
+
+
+            ventana.innerHTML = `
+
+                <div class="detalle-producto">
+
+                    <button
+                        class="cerrar-producto"
+                        type="button"
+                    >
+                        ×
+                    </button>
+
+
+                    <img
+                        src="${producto.imagen}"
+                        alt="${nombreProducto}"
+                    >
+
+
+                    <h2>
+                        ${nombreProducto}
+                    </h2>
+
+
+                    <p>
+                        ${producto.descripcion}
+                    </p>
+
+
+                    <p class="precio-producto">
+                        $${producto.precio} MXN
+                    </p>
+
+
+                    ${
+                        producto.lanzamiento
+                        ?
+                        `
+                        <p class="precio-lanzamiento">
+                            Precio de lanzamiento
+                        </p>
+                        `
+                        :
+                        ""
+                    }
+
+
+                    <button
+                        class="agregar-carrito"
+                        type="button"
+                    >
+                        Agregar al carrito
+                    </button>
+
+
+                    <div class="resumen-carrito-producto">
+
+                        <strong>
+                            Carrito
+                        </strong>
+
+                        <span>
+
+                            <span id="cantidad-carrito-producto">
+                                ${carrito.length}
+                            </span>
+
+                            ${
+                                carrito.length === 1
+                                ? "producto"
+                                : "productos"
+                            }
+
+                        </span>
+
+
+                        <button
+                            type="button"
+                            class="ver-carrito-producto"
+                        >
+                            Ver carrito
+                        </button>
+
+                    </div>
+
+
+                    <p class="mensaje-carrito"></p>
+
+                </div>
+
+            `;
+
+
+            document.body.appendChild(ventana);
+
+
+            ventana
+                .querySelector(".cerrar-producto")
+                .addEventListener(
+                    "click",
+                    () => {
+                        ventana.remove();
+                    }
+                );
+
+
+            ventana
+                .querySelector(".agregar-carrito")
+                .addEventListener(
+                    "click",
+                    () => {
+
+                        agregarAlCarrito(
+                            nombreProducto
+                        );
+
+                    }
+                );
+
+
+            ventana
+                .querySelector(".ver-carrito-producto")
+                .addEventListener(
+                    "click",
+                    () => {
+
+                        ventana.remove();
+
+                        mostrarCarrito();
+
+                    }
+                );
+
+        }
+
+
+        /* =========================================
+           AGREGAR AL CARRITO
+        ========================================= */
 
         function agregarAlCarrito(nombreProducto) {
 
@@ -634,10 +917,12 @@
 
             actualizarContadores();
 
+
             const mensaje =
                 document.querySelector(
                     ".mensaje-carrito"
                 );
+
 
             if (mensaje) {
 
@@ -647,27 +932,28 @@
             }
 
 
-            setTimeout(() => {
+            setTimeout(
+                () => {
 
-                const ventana =
-                    document.querySelector(
-                        ".ventana-producto"
-                    );
+                    const ventana =
+                        document.querySelector(
+                            ".ventana-producto"
+                        );
 
-                if (ventana) {
+                    if (ventana) {
+                        ventana.remove();
+                    }
 
-                    ventana.remove();
-
-                }
-
-            }, 1000);
+                },
+                1000
+            );
 
         }
 
 
-        /* =============================== */
-        /*      ACTUALIZAR CONTADORES      */
-        /* =============================== */
+        /* =========================================
+           CONTADORES
+        ========================================= */
 
         function actualizarContadores() {
 
@@ -675,6 +961,7 @@
                 document.getElementById(
                     "contador-carrito"
                 );
+
 
             if (contador) {
 
@@ -689,6 +976,7 @@
                     "cantidad-carrito-producto"
                 );
 
+
             if (contadorProducto) {
 
                 contadorProducto.textContent =
@@ -699,107 +987,116 @@
         }
 
 
-
-        /* =============================== */
-        /*         MOSTRAR CARRITO         */
-        /* =============================== */
+        /* =========================================
+           MOSTRAR CARRITO
+        ========================================= */
 
         function mostrarCarrito() {
-
-            const ventana =
-                document.createElement("div");
-
-            ventana.classList.add(
-                "ventana-producto"
-            );
-
 
             const cantidades = {};
 
 
-            carrito.forEach(producto => {
+            carrito.forEach(
+                nombreProducto => {
 
-                if (!cantidades[producto]) {
+                    if (
+                        !cantidades[
+                            nombreProducto
+                        ]
+                    ) {
 
-                    cantidades[producto] = 0;
+                        cantidades[
+                            nombreProducto
+                        ] = 0;
+
+                    }
+
+                    cantidades[
+                        nombreProducto
+                    ]++;
 
                 }
-
-                cantidades[producto]++;
-
-            });
+            );
 
 
-            let contenidoCarrito = "";
+            let total = 0;
+
+            let productosHTML = "";
 
 
-            if (carrito.length === 0) {
+            Object.keys(
+                cantidades
+            ).forEach(
+                nombreProducto => {
 
-                contenidoCarrito = `
-
-                    <div class="carrito-vacio">
-
-                        <p>
-                            Tu carrito está vacío.
-                        </p>
-
-                    </div>
-
-                `;
-
-            } else {
-
-                Object.keys(cantidades).forEach(
-                    producto => {
-
-                        const cantidad =
-                            cantidades[producto];
+                    const cantidad =
+                        cantidades[
+                            nombreProducto
+                        ];
 
 
-                        const precio =
-                            obtenerPrecio(producto);
+                    const producto =
+                        productos[
+                            nombreProducto
+                        ];
 
 
-                        const subtotal =
-                            precio !== null
-                            ? precio * cantidad
-                            : null;
+                    const subtotal =
+                        producto.precio *
+                        cantidad;
 
 
-                        contenidoCarrito += `
+                    total += subtotal;
 
-                            <div
-                                class="item-carrito">
 
-                                <strong>
-                                    ${producto}
-                                </strong>
+                    productosHTML += `
+
+                        <div class="item-carrito">
+
+                            <img
+                                src="${producto.imagen}"
+                                alt="${nombreProducto}"
+                            >
+
+
+                            <div class="info-item-carrito">
+
+                                <h3>
+                                    ${nombreProducto}
+                                </h3>
+
+
+                                <p>
+                                    $${producto.precio} MXN
+                                </p>
 
 
                                 ${
-                                    precio !== null
-                                    ? `
-                                        <p class="precio-item">
-                                            $${precio} MXN
-                                        </p>
+                                    producto.lanzamiento
+                                    ?
                                     `
-                                    : `
-                                        <p class="precio-no-configurado">
-                                            Precio pendiente
-                                        </p>
+                                    <span class="precio-lanzamiento">
+                                        Precio de lanzamiento
+                                    </span>
                                     `
+                                    :
+                                    ""
                                 }
 
 
-                                <div
-                                    class="cantidad-carrito">
+                                <strong>
+                                    Subtotal:
+                                    $${subtotal} MXN
+                                </strong>
+
+
+                                <div class="controles-cantidad">
 
                                     <button
                                         type="button"
-                                        onclick="disminuirCantidad('${producto}')">
-
+                                        onclick="disminuirCantidad('${nombreProducto}')"
+                                    >
                                         −
-
                                     </button>
 
 
@@ -810,102 +1107,103 @@
 
                                     <button
                                         type="button"
-                                        onclick="aumentarCantidad('${producto}')">
-
+                                        onclick="aumentarCantidad('${nombreProducto}')"
+                                    >
                                         +
-
                                     </button>
 
                                 </div>
 
-
-                                ${
-                                    subtotal !== null
-                                    ? `
-                                        <p>
-                                            Subtotal:
-                                            $${subtotal} MXN
-                                        </p>
-                                    `
-                                    : ""
-                                }
-
                             </div>
 
-                        `;
+                        </div>
 
-                    }
-                );
+                    `;
 
-            }
+                }
+            );
 
 
-            const total =
-                calcularTotal();
+            const ventana =
+                document.createElement("div");
+
+
+            ventana.classList.add(
+                "ventana-producto"
+            );
 
 
             ventana.innerHTML = `
 
-                <div
-                    class="detalle-producto carrito-ventana">
+                <div class="detalle-producto carrito-modal">
 
                     <button
                         class="cerrar-producto"
-                        type="button">
-
-                        X
-
+                        type="button"
+                    >
+                        ×
                     </button>
 
 
                     <h2>
-                        Mi carrito
+                        Carrito
                     </h2>
 
 
-                    <p class="resumen-total-productos">
-
-                        ${carrito.length}
-                        ${
-                            carrito.length === 1
-                            ? "producto"
-                            : "productos"
-                        }
-
-                    </p>
-
-
-                    <div class="contenido-carrito">
-
-                        ${contenidoCarrito}
-
-                    </div>
-
-
                     ${
-                        carrito.length > 0
-                        ? `
-
-                            <hr>
-
-                            <div class="total-carrito">
-
-                                <span>
-                                    Total
-                                </span>
-
-                                <strong>
-                                    ${
-                                        total > 0
-                                        ? `$${total} MXN`
-                                        : "Por confirmar"
-                                    }
-                                </strong>
-
-                            </div>
+                        carrito.length === 0
+                        ?
 
                         `
-                        : ""
+                        <p>
+                            Tu carrito está vacío.
+                        </p>
+                        `
+
+                        :
+
+                        `
+
+                        <p>
+                            ${carrito.length}
+                            ${
+                                carrito.length === 1
+                                ? "producto"
+                                : "productos"
+                            }
+                        </p>
+
+
+                        <div class="lista-carrito">
+
+                            ${productosHTML}
+
+                        </div>
+
+
+                        <div class="total-carrito">
+
+                            <strong>
+                                Total:
+                            </strong>
+
+                            <strong>
+                                $${total} MXN
+                            </strong>
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            class="boton-whatsapp"
+                            onclick="pedidoWhatsApp()"
+                        >
+                            Continuar pedido por WhatsApp
+                        </button>
+
+                        `
+
                     }
 
                 </div>
@@ -913,110 +1211,59 @@
             `;
 
 
-            document.body.appendChild(ventana);
-
-
-            const cerrar =
-                ventana.querySelector(
-                    ".cerrar-producto"
-                );
-
-
-            cerrar.addEventListener(
-                "click",
-                () => {
-
-                    ventana.remove();
-
-                }
+            document.body.appendChild(
+                ventana
             );
 
-        }
 
-
-
-        /* =============================== */
-        /*        OBTENER PRECIO           */
-        /* =============================== */
-
-        function obtenerPrecio(nombreProducto) {
-
-            if (
-                nombreProducto.startsWith("Jabón")
-            ) {
-
-                return 60;
-
-            }
-
-            return null;
+            ventana
+                .querySelector(
+                    ".cerrar-producto"
+                )
+                .addEventListener(
+                    "click",
+                    () => {
+                        ventana.remove();
+                    }
+                );
 
         }
 
 
-
-        /* =============================== */
-        /*          CALCULAR TOTAL         */
-        /* =============================== */
-
-        function calcularTotal() {
-
-            let total = 0;
-
-
-            carrito.forEach(producto => {
-
-                const precio =
-                    obtenerPrecio(producto);
-
-
-                if (precio !== null) {
-
-                    total += precio;
-
-                }
-
-            });
-
-
-            return total;
-
-        }
-
-
-
-        /* =============================== */
-        /*       AUMENTAR CANTIDAD         */
-        /* =============================== */
+        /* =========================================
+           AUMENTAR CANTIDAD
+        ========================================= */
 
         function aumentarCantidad(
             nombreProducto
         ) {
 
-            carrito.push(nombreProducto);
+            carrito.push(
+                nombreProducto
+            );
 
             actualizarContadores();
+
 
             const ventana =
                 document.querySelector(
                     ".ventana-producto"
                 );
 
+
             if (ventana) {
-
                 ventana.remove();
-
             }
+
 
             mostrarCarrito();
 
         }
 
 
-
-        /* =============================== */
-        /*      DISMINUIR CANTIDAD         */
-        /* =============================== */
+        /* =========================================
+           DISMINUIR CANTIDAD
+        ========================================= */
 
         function disminuirCantidad(
             nombreProducto
@@ -1048,42 +1295,7 @@
 
 
             if (ventana) {
-
                 ventana.remove();
-
-            }
-
-
-            if (carrito.length === 0) {
-
-                mostrarCarrito();
-
-            } else {
-
-                mostrarCarrito();
-
-            }
-
-        }
-
-
-
-        /* =============================== */
-        /*     VER CARRITO DESDE PRODUCTO */
-        /* =============================== */
-
-        function verCarritoDesdeProducto() {
-
-            const ventana =
-                document.querySelector(
-                    ".ventana-producto"
-                );
-
-
-            if (ventana) {
-
-                ventana.remove();
-
             }
 
 
@@ -1092,447 +1304,113 @@
         }
 
 
-
-        /* =============================== */
-        /*        DATOS DE PRODUCTOS       */
-        /* =============================== */
-
-        function abrirProducto(nombreProducto) {
-
-            const productos = {
-
-                "Jabón de Coco": {
-
-                    imagen:
-                        "IMAGENES/jabon-coco.jpg",
-
-                    descripcion:
-                        "Jabón artesanal de coco con hidratación profunda y nutrición natural.",
-
-                    precio:
-                        "$60 MXN"
-
-                },
-
-
-                "Jabón de Arroz": {
-
-                    imagen:
-                        "IMAGENES/jabon-arroz.jpg",
-
-                    descripcion:
-                        "Jabón artesanal de arroz para el cuidado e hidratación de la piel.",
-
-                    precio:
-                        "$60 MXN"
-
-                },
-
-
-                "Jabón de Arroz y Avena": {
-
-                    imagen:
-                        "IMAGENES/jabon-arroz-avena.jpg",
-
-                    descripcion:
-                        "Jabón con exfoliación delicada, hidratación y nutrición natural.",
-
-                    precio:
-                        "$60 MXN"
-
-                },
-
-
-                "Jabón de Avena y Miel": {
-
-                    imagen:
-                        "IMAGENES/jabon-avena-miel.jpg",
-
-                    descripcion:
-                        "Jabón artesanal con hidratación, nutrición y cuidado de la piel.",
-
-                    precio:
-                        "$60 MXN"
-
-                },
-
-
-                "Jabón de Romero": {
-
-                    imagen:
-                        "IMAGENES/jabon-romero.jpg",
-
-                    descripcion:
-                        "Jabón artesanal de romero para el cuidado y limpieza de la piel.",
-
-                    precio:
-                        "$60 MXN"
-
-                },
-
-
-                "Jabón de Pericón": {
-
-                    imagen:
-                        "IMAGENES/jabon-pericon.jpg",
-
-                    descripcion:
-                        "Jabón artesanal elaborado con pericón.",
-
-                    precio:
-                        "$60 MXN"
-
-                },
-
-
-                "Jabón de Manzanilla": {
-
-                    imagen:
-                        "IMAGENES/jaon-manzanilla.jpg",
-
-                    descripcion:
-                        "Jabón artesanal de manzanilla para una limpieza suave.",
-
-                    precio:
-                        "$60 MXN"
-
-                },
-
-
-                "Jabón de Carbón Activado": {
-
-                    imagen:
-                        "IMAGENES/jabon-carbon.jpg",
-
-                    descripcion:
-                        "Jabón artesanal de carbón activado para una limpieza profunda.",
-
-                    precio:
-                        "$60 MXN"
-
-                },
-
-
-                "Jabón de Cúrcuma": {
-
-                    imagen:
-                        "IMAGENES/jabon-curcuma.jpg",
-
-                    descripcion:
-                        "Jabón artesanal de cúrcuma para el cuidado de la piel.",
-
-                    precio:
-                        "$60 MXN"
-
-                },
-
-
-                "Jabón de Manzanilla con Arroz": {
-
-                    imagen:
-                        "IMAGENES/jabon-mazanila-arroz.jpg",
-
-                    descripcion:
-                        "Jabón natural y vegano con manzanilla y arroz.",
-
-                    precio:
-                        "$60 MXN"
-
-                },
-
-
-                "Jabón de Arcilla Roja": {
-
-                    imagen:
-                        "IMAGENES/jabon-arcillar.jpg",
-
-                    descripcion:
-                        "Jabón artesanal de arcilla roja para una limpieza y cuidado natural.",
-
-                    precio:
-                        "$60 MXN"
-
-                },
-
-
-                "Jabón de Arcilla Verde y Menta": {
-
-                    imagen:
-                        "IMAGENES/jabon-arc-verde-menta.jpg",
-
-                    descripcion:
-                        "Jabón artesanal de arcilla verde y menta.",
-
-                    precio:
-                        "$60 MXN"
-
-                },
-
-
-                "Jabón de Arcilla Negra y Carbón Activado": {
-
-                    imagen:
-                        "IMAGENES/jabon-arc-negra-carbon.jpg",
-
-                    descripcion:
-                        "Jabón artesanal de arcilla negra y carbón activado.",
-
-                    precio:
-                        "$60 MXN"
-
-                },
-
-
-                "Jabón de Arroz y Miel": {
-
-                    imagen:
-                        "IMAGENES/jabon-arroz-miel.jpg",
-
-                    descripcion:
-                        "Jabón artesanal de arroz y miel para el cuidado natural de la piel.",
-
-                    precio:
-                        "$60 MXN"
-
-                },
-
-
-                "Shampoo Sólido Anticaída": {
-
-                    imagen:
-                        "IMAGENES/Sham-anticaida.jpg",
-
-                    descripcion:
-                        "Shampoo sólido elaborado con ingredientes naturales para el cuidado del cabello."
-
-                },
-
-
-                "Shampoo Sólido de Crecimiento e Hidratación": {
-
-                    imagen:
-                        "IMAGENES/shamcreci.hidra.jpg",
-
-                    descripcion:
-                        "Shampoo sólido con ingredientes seleccionados para el cuidado capilar."
-
-                },
-
-
-                "Shampoo para Cabello Graso": {
-
-                    imagen:
-                        "IMAGENES/shamgrasa.jpg",
-
-                    descripcion:
-                        "Shampoo sólido pensado para el cuidado del cabello graso."
-
-                },
-
-
-                "Acondicionador Sólido": {
-
-                    imagen:
-                        "IMAGENES/sacondicionador.jpg",
-
-                    descripcion:
-                        "Acondicionador sólido para hidratar y cuidar el cabello."
-
-                },
-
-
-                "Dúo de Shampoo y Acondicionador": {
-
-                    imagen:
-                        "IMAGENES/shamsuoacondicionar.jpg",
-
-                    descripcion:
-                        "Kit de cuidado capilar con shampoo y acondicionador sólido."
-
-                },
-
-
-                "Mantequillas Corporales": {
-
-                    imagen:
-                        "IMAGENES/corporalmantequilla.jpg",
-
-                    descripcion:
-                        "Mantequillas corporales veganas y naturales para el cuidado de la piel."
-
-                },
-
-
-                "Exfoliantes Naturales": {
-
-                    imagen:
-                        "IMAGENES/corporalexfoliante.jpeg",
-
-                    descripcion:
-                        "Exfoliantes veganos y naturales para renovar y cuidar la piel."
-
-                }
-
-            };
-
-
-            const producto =
-                productos[nombreProducto];
-
-
-            if (!producto) {
-
+        /* =========================================
+           WHATSAPP
+        ========================================= */
+
+        function pedidoWhatsApp() {
+
+            if (
+                carrito.length === 0
+            ) {
                 return;
-
             }
 
 
-            const ventana =
-                document.createElement(
-                    "div"
-                );
+            const cantidades = {};
 
 
-            ventana.classList.add(
-                "ventana-producto"
-            );
+            carrito.forEach(
+                nombreProducto => {
 
+                    if (
+                        !cantidades[
+                            nombreProducto
+                        ]
+                    ) {
 
-            ventana.innerHTML = `
+                        cantidades[
+                            nombreProducto
+                        ] = 0;
 
-                <div
-                    class="detalle-producto">
-
-                    <button
-                        class="cerrar-producto"
-                        type="button">
-
-                        X
-
-                    </button>
-
-
-                    <img
-                        src="${producto.imagen}"
-                        alt="${nombreProducto}">
-
-
-                    <h2>
-                        ${nombreProducto}
-                    </h2>
-
-
-                    <p>
-                        ${producto.descripcion}
-                    </p>
-
-
-                    <p>
-                        Elaborado artesanalmente
-                        con ingredientes naturales.
-                    </p>
-
-
-                    ${
-                        producto.precio
-                        ? `
-
-                            <p
-                                class="precio-producto">
-
-                                ${producto.precio}
-
-                            </p>
-
-                        `
-                        : ""
                     }
 
+                    cantidades[
+                        nombreProducto
+                    ]++;
 
-                    <button
-                        class="agregar-carrito"
-                        type="button"
-                        onclick="agregarAlCarrito('${nombreProducto}')">
-
-                        Agregar al carrito
-
-                    </button>
-
-
-                    <div
-                        class="resumen-carrito-producto">
-
-                        <strong>
-                            Carrito
-                        </strong>
-
-
-                        <span>
-
-                            <span
-                                id="cantidad-carrito-producto">
-
-                                ${carrito.length}
-
-                            </span>
-
-                            ${
-                                carrito.length === 1
-                                ? "producto"
-                                : "productos"
-                            }
-
-                        </span>
-
-
-                        <button
-                            type="button"
-                            class="ver-carrito-producto"
-                            onclick="verCarritoDesdeProducto()">
-
-                            Ver carrito
-
-                        </button>
-
-                    </div>
-
-
-                    <p
-                        class="mensaje-carrito">
-                    </p>
-
-                </div>
-
-            `;
-
-
-            document.body.appendChild(
-                ventana
+                }
             );
 
 
-            const cerrar =
-                ventana.querySelector(
-                    ".cerrar-producto"
-                );
+            let mensaje =
+                "Hola, ShaOl. Me gustaría hacer el siguiente pedido:%0A%0A";
 
 
-            cerrar.addEventListener(
-                "click",
-                () => {
+            let total = 0;
 
-                    ventana.remove();
+
+            Object.keys(
+                cantidades
+            ).forEach(
+                nombreProducto => {
+
+                    const cantidad =
+                        cantidades[
+                            nombreProducto
+                        ];
+
+
+                    const producto =
+                        productos[
+                            nombreProducto
+                        ];
+
+
+                    const subtotal =
+                        producto.precio *
+                        cantidad;
+
+
+                    total += subtotal;
+
+
+                    mensaje +=
+                        `${cantidad} x ${nombreProducto} - $${subtotal} MXN%0A`;
 
                 }
+            );
+
+
+            mensaje += "%0A";
+
+
+            mensaje +=
+                `Total: $${total} MXN%0A%0A`;
+
+
+            mensaje +=
+                "Quedo pendiente para confirmar mi pedido.";
+
+
+            const numeroWhatsApp = "525576742416";
+
+
+            const url =
+                `https://wa.me/${numeroWhatsApp}?text=${mensaje}`;
+
+
+            window.open(
+                url,
+                "_blank"
             );
 
         }
 
 
-
-        /* =============================== */
-        /*              MENU               */
-        /* =============================== */
+        /* =========================================
+           MENÚ
+        ========================================= */
 
         const menuToggle =
             document.querySelector(
@@ -1568,7 +1446,7 @@
                 ) {
 
                     menuToggle.textContent =
-                        "X";
+                        "×";
 
                 } else {
 
@@ -1604,7 +1482,6 @@
     </script>
 
 
-
     <!-- =============================== -->
     <!--             FOOTER              -->
     <!-- =============================== -->
@@ -1616,8 +1493,7 @@
         </p>
 
         <p>
-            Productos veganos, naturales
-            y hechos con amor
+            Productos veganos, naturales y hechos con amor.
         </p>
 
     </footer>
